@@ -1,37 +1,26 @@
-WaProject Api Base
-==================
+# WA Order Service Backend
 
-[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/f109c9a8c09dd5e648dd)
+Backend do projeto WA Order Service.
+Utiliza NestJS em sua composição.
 
-Utilize o VSCode, já está configurado com sugestão de extensões e debug.
+## Rodando aplicação local
 
-### Tecnologias
+### Instalação:
 
-* Node/Typescript
-* NestJs (Framework)
-* Docker
-* Objection (ORM) / Knex (Query builder e migrations)
-* Mailgun (envio de email)
-* AWS (envio de email/s3)
-* JWT (tokens)
-* Bcrypt (criptografia para senhas)
-* Sentry.io (log de erros)
-* Pug (templates de email)
+Este projeto utiliza docker como dependência obrigatória.
 
-### Iniciando um novo projeto
+1. Renomeie o arquivo .env.example para .env
+2. Execute `docker-compose up` para instalar as dependências fora do container
+3. Execute: `docker-compose up`
 
-```bash
-# install docker https://docs.docker.com/install
+A aplicação estará rodando em [http://localhost:5000](http://localhost:5000) no ambiente local.
 
-git clone git@bitbucket.org:waprojectbase/waproject-base-api.git
-yarn install # ou npm install
+### Documentação:
 
-node ./init.js
+A documentação pode ser acessada em [http://localhost:5000/swagger](http://localhost:5000/swagger) no ambiente local.
 
-[sudo] docker-componse up
-# levantará o docker com o banco de dados e a aplicação.
-# Ele aplicará as migrations/seeds do banco e depois dará watch nos arquivos
-# e iniciará o node com a api
-```
+## Testes unitários:
 
-### Para mais informações veja a pasta ./docs
+Para executar os testes unitários:
+
+1. Execute `yarn test`
