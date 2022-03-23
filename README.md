@@ -10,8 +10,8 @@ Utiliza NestJS em sua composição.
 Este projeto utiliza docker como dependência obrigatória.
 
 1. Renomeie o arquivo .env.example para .env
-2. Execute `docker-compose up` para instalar as dependências fora do container
-3. Execute: `docker-compose up`
+2. Execute `yarn install` para instalar as dependências fora do container
+3. Execute `docker-compose up` para subir o container
 
 A aplicação estará rodando em [http://localhost:5000](http://localhost:5000) no ambiente local.
 
