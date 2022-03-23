@@ -2,7 +2,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import { Model } from 'objection';
 
 import { IOrder } from '../interfaces/order';
-import { OrderItem } from './orderItem';
+import { OrderItem } from './order-item';
 import { User } from './user';
 
 export class Order extends Model implements IOrder {

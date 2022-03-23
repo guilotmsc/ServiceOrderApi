@@ -1,6 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { IOrderItem } from 'modules/database/interfaces/orderItem';
-import { OrderItem } from 'modules/database/models/orderItem';
+import { IOrderItem } from 'modules/database/interfaces/order-item';
+import { OrderItem } from 'modules/database/models/order-item';
 
 import { OrderItemRepository } from '../repositories/order-item';
 

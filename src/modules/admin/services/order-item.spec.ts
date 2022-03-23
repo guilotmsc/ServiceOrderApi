@@ -1,5 +1,5 @@
 import { NotFoundException } from '@nestjs/common';
-import { IOrderItem } from 'modules/database/interfaces/orderItem';
+import { IOrderItem } from 'modules/database/interfaces/order-item';
 
 import { OrderItemRepository } from '../repositories/order-item';
 import { OrderItemService } from './order-item';

@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsInt, IsNotEmpty, IsOptional, IsString, MaxLength, Min, MinLength } from 'class-validator';
-import { IOrderItem } from 'modules/database/interfaces/orderItem';
+import { IOrderItem } from 'modules/database/interfaces/order-item';
 
 export class SaveValidator implements IOrderItem {
   @IsOptional()

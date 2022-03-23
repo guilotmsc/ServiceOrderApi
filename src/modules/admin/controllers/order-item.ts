@@ -1,7 +1,7 @@
 import { Body, Controller, Delete, Get, Param, ParseIntPipe, Post, Query } from '@nestjs/common';
 import { ApiResponse, ApiTags } from '@nestjs/swagger';
 import { AuthRequired } from 'modules/common/guards/token';
-import { OrderItem } from 'modules/database/models/orderItem';
+import { OrderItem } from 'modules/database/models/order-item';
 
 import { OrderItemRepository } from '../repositories/order-item';
 import { OrderItemService } from '../services/order-item';
